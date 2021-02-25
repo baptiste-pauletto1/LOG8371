@@ -16,7 +16,7 @@ public class BeanUtilsTest {
 		assertEquals(getter.getReturnType(), String.class);
 
 		List<Method> getters = BeanUtils.findGetters(SubClass.class);
-		assertEquals(getters.size(), 2);
+		assertEquals(getters.size(), 3);
 		assertEquals(getters.get(0).getReturnType(), String.class);
 		assertEquals(getters.get(1).getReturnType(), Class.class);
 	}
